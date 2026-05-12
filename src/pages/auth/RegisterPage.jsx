@@ -12,7 +12,7 @@ import {
 import { toast } from "react-toastify";
 
 import colors from "../../styles/colors";
-import { registerRequest } from "../../services/auth.Service";
+import { registerRequest } from "../../services/auth.service";
 
 export default function RegisterPage() {
   const navigate = useNavigate();
