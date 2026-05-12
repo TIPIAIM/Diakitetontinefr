@@ -23,9 +23,9 @@ import {
   X,
 } from "lucide-react";
 import { useMemo, useState } from "react";
-import colors from "../../Styles/colors";
+import colors from "../../styles/colors";
 import useAuthStore from "../../store/authStore";
-import { logoutRequest } from "../../services/auth.Service";
+import { logoutRequest } from "../../services/auth.service";
 import {
   USER_ROLES,
   getRedirectByRole,
