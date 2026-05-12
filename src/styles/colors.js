@@ -1,11 +1,5 @@
 // src/Styles/colors.js
 
-/**
- * Palette institutionnelle - ERP Tribunal DIXINN
- * Inspiration : identité institutionnelle sobre, professionnelle et gouvernementale
- * Dominantes : vert institutionnel, rouge républicain, jaune d'accent, blanc, gris
- */
-//primary
 const colors = {
   // =========================
   // COULEURS PRINCIPALES
