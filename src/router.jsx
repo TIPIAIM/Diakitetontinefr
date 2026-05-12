@@ -1,4 +1,5 @@
-{/*import { createBrowserRouter, Navigate } from "react-router-dom";
+{
+  /*import { createBrowserRouter, Navigate } from "react-router-dom";
 
 import GuestOnly from "../components/auth/GuestOnly";
 import RequireAuth from "../components/auth/RequireAuth";
@@ -99,51 +100,52 @@ const router = createBrowserRouter([
 ]);
 
 export default router;
-*/}
+*/
+}
 // src/routes/router.jsx
 import { lazy, Suspense } from "react";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
-import GuestOnly from "../components/auth/GuestOnly";
-import RequireAuth from "../components/auth/RequireAuth";
-import RoleRedirect from "../components/auth/RoleRedirect";
-import DashboardLayout from "../components/layout/DashboardLayout";
+import GuestOnly from "./components/auth/GuestOnly";
+import RequireAuth from "./components/auth/RequireAuth";
+import RoleRedirect from "./components/auth/RoleRedirect";
+import DashboardLayout from "./components/layout/DashboardLayout";
 
-import PageLoader from "../components/common/PageLoader";
-import ErrorBoundary from "../components/common/ErrorBoundary";
-import RouteTransition from "../components/common/RouteTransition";
+import PageLoader from "./components/common/PageLoader";
+import ErrorBoundary from "./components/common/ErrorBoundary";
+import RouteTransition from "./components/common/RouteTransition";
 
-import { USER_ROLES } from "../utils/roleRedirect";
+import { USER_ROLES } from "./utils/roleRedirect";
 
-const LoginPage = lazy(() => import("../pages/auth/LoginPage"));
-const RegisterPage = lazy(() => import("../pages/auth/RegisterPage"));
-const VerifyEmailPage = lazy(() => import("../pages/auth/VerifyEmailForm"));
+const LoginPage = lazy(() => import("./pages/auth/LoginPage"));
+const RegisterPage = lazy(() => import("./pages/auth/RegisterPage"));
+const VerifyEmailPage = lazy(() => import("./pages/auth/VerifyEmailForm"));
 
 const DashboardPage = lazy(() =>
-  import("../pages/admin/dashboard/DashboardPage")
+  import("./pages/admin/dashboard/DashboardPage")
 );
 
-const MembersPage = lazy(() => import("../pages/admin/Members/MembersPage"));
+const MembersPage = lazy(() => import("./pages/admin/Members/MembersPage"));
 
-const CyclesPage = lazy(() => import("../pages/admin/cycle/CyclesPage"));
+const CyclesPage = lazy(() => import("./pages/admin/cycle/CyclesPage"));
 
 const ContributionsPage = lazy(() =>
-  import("../pages/admin/contributions/ContributionsPage")
+  import("./pages/admin/contributions/ContributionsPage")
 );
 
-const PayoutsPage = lazy(() => import("../pages/admin/payouts/PayoutsPage"));
+const PayoutsPage = lazy(() => import("./pages/admin/payouts/PayoutsPage"));
 
 const RemindersPage = lazy(() =>
-  import("../pages/admin/reminders/RemindersPage")
+  import("./pages/admin/reminders/RemindersPage")
 );
 
-const ReportsPage = lazy(() => import("../pages/admin/reports/ReportsPage"));
+const ReportsPage = lazy(() => import("./pages/admin/reports/ReportsPage"));
 
-const SettingsPage = lazy(() => import("../pages/admin/settings/SettingsPage"));
+const SettingsPage = lazy(() => import("./pages/admin/settings/SettingsPage"));
 
-const AuditsPage = lazy(() => import("../pages/admin/audits/AuditsPage"));
+const AuditsPage = lazy(() => import("./pages/admin/audits/AuditsPage"));
 
-const BackupsPage = lazy(() => import("../pages/admin/backups/BackupsPage"));
+const BackupsPage = lazy(() => import("./pages/admin/backups/BackupsPage"));
 
 const LazyPage = ({ children }) => {
   return (
