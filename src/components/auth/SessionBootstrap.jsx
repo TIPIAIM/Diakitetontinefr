@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import useAuthStore from "../../store/authStore";
-import { refreshRequest } from "../../services/auth.Service";
+import { refreshRequest } from "../../services/auth.service";
 import { connectSocketForCurrentUser } from "../../services/socket";
 
 export default function SessionBootstrap({ children }) {
