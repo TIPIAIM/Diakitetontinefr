@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { toast } from "react-toastify";
 
-import colors from "../../Styles/colors";
+import colors from "../../styles/colors";
 import { registerRequest } from "../../services/auth.Service";
 
 export default function RegisterPage() {

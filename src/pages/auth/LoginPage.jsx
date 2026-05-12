@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Lock, Mail, ShieldCheck } from "lucide-react";
 import { toast } from "react-toastify";
 
-import colors from "../../Styles/colors";
+import colors from "../../styles/colors";
 import { loginRequest } from "../../services/auth.Service";
 import useAuthStore from "../../store/authStore";
 import { getRedirectByRole } from "../../utils/roleRedirect";
