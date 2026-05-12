@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": false,
+    "strict": false,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "types": ["vite/client"]
+  },
+  "include": [
+    "src",
+    "../serveryuigui/src/scripts",
+    "../server/src/middlewares/audience/audience.routes.js",
+    "../server/src/middlewares/audience/audience.controller.js",
+    "../server/src/middlewares/audience/audience.scheduler.js"
+  ]
+}
