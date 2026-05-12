@@ -7,7 +7,7 @@ import colors from "../../styles/colors";
 import {
   resendVerificationCodeRequest,
   verifyEmailRequest,
-} from "../../services/auth.Service";
+} from "../../services/auth.service";
 
 export default function VerifyEmailPage() {
   const navigate = useNavigate();
